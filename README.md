@@ -1,16 +1,11 @@
-# project_setting
+# 플러터 프로젝트 세팅
+플러터 프로젝트를 시작할때 프로젝트 시작할때의 번거로움을 없애기 위해 만들었습니다.
 
-A new Flutter project.
+# 이슈 및 PR 템플릿
+이슈 및 pr 템플릿을 작성했습니다.
 
-## Getting Started
+# CI 설정
+유지적인 정기보수를 위해 CI를 설정해뒀습니다.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# FVM
+FVM을 통해 플러터 버전을 불러와 설정하도록 해뒀습니다.
