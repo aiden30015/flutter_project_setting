@@ -28,3 +28,26 @@ flutter pub get
 flutter clean
 flutter run
 ```
+
+## Flutter 버전 (FVM)
+
+Flutter 버전은 `.fvmrc`로 고정합니다. CI도 이 파일의 버전으로 빌드합니다.
+
+```bash
+fvm install
+fvm use
+```
+
+## 환경 분리 (dev / prod)
+
+환경별 값은 `env/dev.json`, `env/prod.json`에 두고 `--dart-define-from-file`로 주입합니다.
+코드에서는 `AppEnv`(`lib/core/config/app_env.dart`)로 읽습니다.
+
+```bash
+flutter run --dart-define-from-file=env/dev.json
+flutter build apk --dart-define-from-file=env/prod.json
+```
+
+VS Code에서는 실행 구성에서 `dev` / `prod`를 선택하면 됩니다.
+
+> `env/*.json`은 커밋되므로 API 키 같은 비밀 값은 넣지 마세요.
